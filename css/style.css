@@ -2361,6 +2361,10 @@ h6 {
   padding: 0px;
   margin: 0px; }
 
+  .nope{
+    color: #000;
+  }
+
 .ordered-list {
   list-style: none;
   padding: 0px; }
@@ -2885,6 +2889,46 @@ h6 {
     background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+
+
+    .gal {
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 30px; }
+      .gal:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 300ms ease; }
+      .gal .projects_text {
+        position: absolute;
+        left: 0px;
+        bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px; }
+        .gal .projects_text h4 {
+          font-size: 21px;
+          font-family: "Heebo", sans-serif;
+          font-weight: bold;
+          color: #222222;
+          margin-bottom: 5px;
+          transition: all 300ms linear 0s;
+          text-transform: uppercase;
+          cursor: pointer; }
+        .gal .projects_text p {
+          margin-bottom: 0px;
+          font-size: 14px; }
+      .gal:hover:before {
+        opacity: 1; }
+      .gal:hover .projects_text h4 {
+        background: linear-gradient(to right, #8490ff 0%, #62bdfc 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }   
 
 /* End Projects Area css
 ============================================================================================ */
